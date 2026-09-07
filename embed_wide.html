@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Market Reality Quadrant</title>
+<title>The Whiplash Index</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
 <style>
   :root { color-scheme: light;
     --surface-1:#fcfcfb; --page:#f9f9f7; --ink-1:#0b0b0b; --ink-2:#52514e; --muted:#898781;
@@ -13,9 +15,9 @@
     --surface-1:#1a1a19; --page:#0d0d0d; --ink-1:#ffffff; --ink-2:#c3c2b7; --muted:#898781;
     --grid:#2c2c2a; --baseline:#383835; --border:rgba(255,255,255,0.10); --accent:#3987e5; } }
   * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background:var(--page); color:var(--ink-1); line-height:1.55; padding:16px; }
-  .card { max-width:820px; margin:0 auto; background:var(--surface-1); border:1px solid var(--border); border-radius:10px; padding:18px 20px; }
-  h1 { font-size:17px; font-weight:700; margin-bottom:2px; }
+  body { font-family: 'Inter', system-ui, -apple-system, "Segoe UI", sans-serif; background:var(--page); color:var(--ink-1); line-height:1.55; padding:12px; }
+  .card { max-width:820px; margin:0 auto; }
+  h1 { font-size:18px; font-weight:700; margin-bottom:2px; letter-spacing:-0.01em; }
   .sub { font-size:12.5px; color:var(--muted); margin-bottom:12px; }
   .copy p { font-size:14px; margin-bottom:8px; }
   .copy p:last-child { margin-bottom:0; }
@@ -29,9 +31,9 @@
 </head>
 <body>
 <div class="card">
-  <h1>Market Reality Quadrant</h1>
+  <h1>The Whiplash Index</h1>
   <div class="sub">Where the economy stands vs the story being told about it &middot; updated September 7, 2026</div>
-  <div style="text-align:center; margin-bottom:14px;"><svg viewBox="0 0 720 470" role="img" aria-label="Economy quadrant: real economy vs story extension, 3-year quarterly path. Current position: contracting and overhyped." style="max-width:720px;width:100%;">
+  <div style="text-align:center; margin-bottom:14px;"><svg viewBox="0 0 720 470" role="img" aria-label="The Whiplash Index quadrant: real economy vs story extension, 3-year quarterly path. Current position: contracting and overhyped." style="max-width:720px;width:100%;">
 <rect x="40" y="28" width="640" height="400" fill="none" stroke="var(--grid)"/>
 <line x1="360" y1="28" x2="360" y2="428" stroke="var(--grid)" stroke-width="1.5"/>
 <line x1="40" y1="228" x2="680" y2="228" stroke="var(--baseline)" stroke-width="1.5"/>
@@ -41,11 +43,18 @@
 <text x="52" y="52" font-size="13" font-weight="700" text-anchor="start" fill="var(--serious)">DENIAL</text><text x="52" y="66" font-size="11" text-anchor="start" fill="var(--muted)">shrinking, story says fine</text><text x="668" y="52" font-size="13" font-weight="700" text-anchor="end" fill="var(--warning)">RUNNING HOT</text><text x="668" y="66" font-size="11" text-anchor="end" fill="var(--muted)">growing, but overhyped</text><text x="52" y="402" font-size="13" font-weight="700" text-anchor="start" fill="var(--muted)">DESPAIR</text><text x="52" y="416" font-size="11" text-anchor="start" fill="var(--muted)">shrinking, story too gloomy</text><text x="668" y="402" font-size="13" font-weight="700" text-anchor="end" fill="var(--muted)">UNDERRATED</text><text x="668" y="416" font-size="11" text-anchor="end" fill="var(--muted)">growing, story too gloomy</text>
 <text x="360" y="456" text-anchor="middle" font-size="12" fill="var(--ink-2)">Real economy (private data): shrinking &#8592; &#8594; growing</text>
 <text x="16" y="228" font-size="12" fill="var(--ink-2)" transform="rotate(-90 16 228)" text-anchor="middle">Story vs reality: too gloomy &#8592; &#8594; too hot</text>
-<g class="trail"><polyline points="91,112 226,88 149,104 309,112 360,88 411,152 469,228 520,168 546,146 520,136 354,112 290,78" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity="0.45" stroke-dasharray="4 4"/><circle cx="91" cy="112" r="4.0" fill="var(--accent)" opacity="0.22"/><text x="100" y="102" font-size="11" fill="var(--muted)">Q4 '23</text><circle cx="226" cy="88" r="4.2" fill="var(--accent)" opacity="0.27"/><circle cx="149" cy="104" r="4.5" fill="var(--accent)" opacity="0.32"/><circle cx="309" cy="112" r="4.7" fill="var(--accent)" opacity="0.37"/><circle cx="360" cy="88" r="4.9" fill="var(--accent)" opacity="0.42"/><circle cx="411" cy="152" r="5.1" fill="var(--accent)" opacity="0.47"/><circle cx="469" cy="228" r="5.4" fill="var(--accent)" opacity="0.52"/><text x="478" y="246" font-size="11" fill="var(--muted)">Q2 '25</text><circle cx="520" cy="168" r="5.6" fill="var(--accent)" opacity="0.57"/><circle cx="546" cy="146" r="5.8" fill="var(--accent)" opacity="0.62"/><text x="555" y="136" font-size="11" fill="var(--muted)">Q4 '25</text><circle cx="520" cy="136" r="6.0" fill="var(--accent)" opacity="0.67"/><circle cx="354" cy="112" r="6.3" fill="var(--accent)" opacity="0.72"/></g>
+<g id="trail"><polyline points="91,112 226,88 149,104 309,112 360,88 411,152 469,228 520,168 546,146 520,136 354,112 290,78" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity="0.45" stroke-dasharray="4 4"/><circle cx="91" cy="112" r="4.0" fill="var(--accent)" opacity="0.22"/><text x="99" y="102" font-size="11" text-anchor="start" fill="var(--muted)">Q4 '23</text><circle cx="226" cy="88" r="4.2" fill="var(--accent)" opacity="0.27"/><circle cx="149" cy="104" r="4.5" fill="var(--accent)" opacity="0.32"/><circle cx="309" cy="112" r="4.7" fill="var(--accent)" opacity="0.37"/><text x="317" y="102" font-size="11" text-anchor="start" fill="var(--muted)">Q3 '24</text><circle cx="360" cy="88" r="4.9" fill="var(--accent)" opacity="0.42"/><circle cx="411" cy="152" r="5.1" fill="var(--accent)" opacity="0.47"/><text x="419" y="142" font-size="11" text-anchor="start" fill="var(--muted)">Q1 '25</text><circle cx="469" cy="228" r="5.4" fill="var(--accent)" opacity="0.52"/><text x="477" y="246" font-size="11" text-anchor="start" fill="var(--muted)">Q2 '25</text><circle cx="520" cy="168" r="5.6" fill="var(--accent)" opacity="0.57"/><circle cx="546" cy="146" r="5.8" fill="var(--accent)" opacity="0.62"/><text x="554" y="136" font-size="11" text-anchor="start" fill="var(--muted)">Q4 '25</text><circle cx="520" cy="136" r="6.0" fill="var(--accent)" opacity="0.67"/><text x="512" y="124" font-size="11" text-anchor="end" fill="var(--muted)">Q1 '26</text><circle cx="354" cy="112" r="6.3" fill="var(--accent)" opacity="0.72"/><text x="362" y="130" font-size="11" text-anchor="start" fill="var(--muted)">Q2 '26</text></g>
 <circle cx="290" cy="78" r="9" fill="var(--accent)"/>
 <circle cx="290" cy="78" r="14" fill="none" stroke="var(--accent)" opacity="0.4"/>
 <text x="306" y="83" font-size="12.5" font-weight="700" fill="var(--ink-1)">NOW (Sep 7)</text>
-</svg></div>
+</svg>
+<div style="margin-top:2px;"><label style="font-size:12.5px; color:var(--ink-2); cursor:pointer; user-select:none; white-space:nowrap;"><input type="checkbox" id="trailToggle" checked style="vertical-align:-2px; margin-right:6px;">Show the 3-year path (quarterly averages)</label></div>
+<script>
+(function(){
+  var t=document.getElementById('trailToggle'), g=document.getElementById('trail');
+  if(t&&g){t.addEventListener('change',function(){ if(t.checked){g.removeAttribute('hidden');} else {g.setAttribute('hidden','');} });}
+})();
+</script></div>
 <div class="copy">
   <p><strong>What it says right now:</strong> The real economy is slowing. Fewer goods are being shipped, and fewer people are going out to eat. But the official numbers and the stock market are acting like everything is fine. That gap between the story and reality is the widest it has been all year. Gaps like this do not last: either reality catches up to the story, or the story falls back down to reality.</p>
   <p><strong>What just changed:</strong> The government jobs report flipped from weak to strong in one month, while private shipping data got worse. The US Treasury began buying back its own long-term bonds. Gold pulled back after a strong run.</p>
